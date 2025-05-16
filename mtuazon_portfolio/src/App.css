@@ -1,0 +1,133 @@
+/* src/App.css */
+
+/* reset margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+/* root flex container */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* header */
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 10;
+}
+.topbar .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+.topbar .nav {
+  display: flex;
+  gap: 24px;
+}
+.topbar .nav a {
+  text-decoration: none;
+  color: #111827;
+  transition: color 0.2s;
+}
+.topbar .nav a:hover {
+  color: #7c3aed;
+}
+
+/* main content split */
+.content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* left panel */
+.left-panel {
+  width: 50%;
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-panel .profile {
+  text-align: center;
+}
+.left-panel .profile img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.left-panel .social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.left-panel .social-icons a {
+  color: #d1d5db;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+.left-panel .social-icons a:hover {
+  color: #fff;
+}
+
+/* right panel */
+.right-panel {
+  width: 50%;
+  background: #edd6ff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+.right-panel .card {
+  background: #fefcf3;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 0 0 24px 24px;
+  padding: 32px;
+  text-align: center;
+}
+.right-panel .card h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #111827;
+}
+.right-panel .card p {
+  margin: 8px 0 0;
+  color: #374151;
+}
+.right-panel .buttons {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+.right-panel .buttons a {
+  text-decoration: none;
+  background: #fefcf3;
+  color: #8b5cf6;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+.right-panel .buttons a:hover {
+  background: #fbf8ff;
+}
